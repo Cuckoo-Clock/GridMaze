@@ -11,6 +11,19 @@ https://medium.com/@dailyfire/pure-css-parallax-simple-tricks-da102d0ffdb9
 https://css-tricks.com/pure-css-parallax-scrolling-websites/  
 https://greensock.com/scrollmagic/  
 
+### CSS grid inspiration
+
+* [Smashing magazine inspirations](https://www.smashingmagazine.com/2017/10/css-grid-challenge-2017-winners/)
+* [Smashing Magazine best practices](https://www.smashingmagazine.com/2018/04/best-practices-grid-layout/)
+* [Check out the ISOmetric Ecommerce](https://1stwebdesigner.com/fascinating-css-grid-layout-examples-and-tutorials/)
+* [more examples, people love that periodic table...](https://speckyboy.com/creative-examples-css-grid-layouts/)
+* [Someone else's list on github](https://github.com/valentinogagliardi/awesome-css-grid)
+* [more!](https://bashooka.com/coding/25-awesome-css-grid-layout-examples/)
+
+### inspiration things to look at
+
+[Some display fonts](https://br.pinterest.com/RDonario1981/erts-fonts-p-recortes/)
+
 [LAURA's awesome exemplar site.](https://discoveredfoods.com/)
 * [Another bit of her inspiration](https://create.editorx.com/website-template/view/html/2663)  
 * [one more](https://create.editorx.com/website-template/view/html/2547)
