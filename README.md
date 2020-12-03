@@ -15,6 +15,8 @@ https://greensock.com/scrollmagic/
 * [Another bit of her inspiration](https://create.editorx.com/website-template/view/html/2663)  
 * [one more](https://create.editorx.com/website-template/view/html/2547)
 
+[Something to think about for SVG freakout, eastern europe deocrative arts, lots of repitiion and pattern.](https://www.youtube.com/watch?v=03IrY6Kh8dk)
+
 ## Content?
 #### old science & clocks? 
 [Bills Clock Works](https://billsclockworks.com/merchandise/clockGallery/4/page1.html)  
