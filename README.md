@@ -6,12 +6,14 @@ a diversion for learning CSS grid, Flexbox, some parralax & some ARIA practices.
 [ARIA reources.](https://accessibilityresources.org/aria-controls)  
 [Felxbox from CSS tricks.](https://css-tricks.com/snippets/css/a-guide-to-flexbox/), pair of flexbox containers, one fixed, one scrolling.'
 
-https://www.w3schools.com/howto/howto_css_parallax.asp
-https://medium.com/@dailyfire/pure-css-parallax-simple-tricks-da102d0ffdb9
-https://css-tricks.com/pure-css-parallax-scrolling-websites/
+https://www.w3schools.com/howto/howto_css_parallax.asp  
+https://medium.com/@dailyfire/pure-css-parallax-simple-tricks-da102d0ffdb9  
+https://css-tricks.com/pure-css-parallax-scrolling-websites/  
+https://greensock.com/scrollmagic/  
 
-LAURA's awesome exemplar site.
-
+[LAURA's awesome exemplar site.](https://discoveredfoods.com/)
+* [Another bit of her inspiration](https://create.editorx.com/website-template/view/html/2663)  
+* [one more](https://create.editorx.com/website-template/view/html/2547)
 
 ## Content?
 #### old science & clocks? 
