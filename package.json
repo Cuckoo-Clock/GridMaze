@@ -1,0 +1,22 @@
+{
+  "name": "svgmaze",
+  "version": "1.0.0",
+  "description": "Using SVG graphics to create curious and beautiful explorations.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Cuckoo-Clock/GridMaze.git"
+  },
+  "author": "Andrew Oesch",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Cuckoo-Clock/GridMaze/issues"
+  },
+  "homepage": "https://github.com/Cuckoo-Clock/GridMaze#readme",
+  "dependencies": {
+    "lite-server": "^2.5.4"
+  }
+}
