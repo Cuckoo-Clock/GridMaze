@@ -16,7 +16,10 @@
     "url": "https://github.com/Cuckoo-Clock/GridMaze/issues"
   },
   "homepage": "https://github.com/Cuckoo-Clock/GridMaze#readme",
-  "dependencies": {
-    "lite-server": "^2.5.4"
+  "devDependencies": {
+    "node-sass": "^4.14.1",
+    "lite-server": "^2.5.4",
+    "onchange": "^7.0.0",
+    "parallelshell": "^3.0.1"
   }
 }
