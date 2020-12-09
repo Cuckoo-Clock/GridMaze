@@ -20,6 +20,15 @@ https://greensock.com/scrollmagic/
 * [Someone else's list on github](https://github.com/valentinogagliardi/awesome-css-grid)
 * [more!](https://bashooka.com/coding/25-awesome-css-grid-layout-examples/)
 
+#### SVG & CSS filters
+
+* [Smashing Magazine's breakdown](https://www.smashingmagazine.com/2015/05/why-the-svg-filter-is-awesome/)
+* [CSS filters](https://developer.mozilla.org/en-US/docs/Web/CSS/filter)
+* [applying filters](https://www.creativebloq.com/how-to/add-svg-filters-with-css)
+* [Codrops article on SVG filters](https://tympanus.net/codrops/2019/01/15/svg-filters-101/)
+* [css backdrop filter](https://iamvdo.me/en/blog/advanced-css-filters)
+* [a walk through applying filters to display font](https://www.creativebloq.com/how-to/add-svg-filters-with-css)
+
 #### other CSS bits
 
 * [CSS graident](https://cssgradient.io/blog/)
