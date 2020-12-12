@@ -3,29 +3,32 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
     <title>//\\//\\//\\//\\</title>
 </head>
 <body>
+
+<!-- I don't understand the viewbox.... -->
+
+    <div class="container">
+        <!-- no support warning -->
+        <div class="no-support">
+            <p>Heads up: It doesn't look like your browser supports <code>backdrop-filter</code>! </p>
+        </div>
+        <div >
+            <object class="color-shift" data="rhodashape.svg" type="image/svg+xml"></object>
+        </div>
+        <!-- some sorta grid container -->
+        <div class="">
+            <object data="glioucheOne.svg" type="image/svg+xml"></object>
+        </div>
+        <div>
+            <object data="glioucheTwo.svg" type="image/svg+xml"></object>
+        </div>
+    </div>
+    <img class="color-shift" src="https://picsum.photos/id/40/200" alt="nubs">
     
-    <object type="image/svg+xml" data="glioucheOne.svg" class="field">
-        <!-- Kiwi Logo // fallback image in CSS -->
-      </object>
-<!-- 
-    xhr = new XMLHttpRequest();
-    xhr.open("GET","my.svg",false);
-    // Following line is just to be on the safe side;
-    // not needed if your server delivers SVG with correct MIME type
-    xhr.overrideMimeType("image/svg+xml");
-    xhr.onload = function(e) {
-      // You might also want to check for xhr.readyState/xhr.status here
-      document.getElementById("svgContainer")
-        .appendChild(xhr.responseXML.documentElement);
-    }
-    xhr.send(""); -->
-
-
-
 
 </body>
-<!-- fo manipulating svg with js -->
+
 </html>

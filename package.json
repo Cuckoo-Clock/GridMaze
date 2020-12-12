@@ -4,7 +4,11 @@
   "description": "Using SVG graphics to create curious and beautiful explorations.",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "npm run parallelshell start-lite sassify",
+    "start-lite": "npm run lite",
+    "lite": "lite-server",
+    "sassify": "node-sass styles.scss styles.css"
   },
   "repository": {
     "type": "git",
@@ -17,9 +21,10 @@
   },
   "homepage": "https://github.com/Cuckoo-Clock/GridMaze#readme",
   "devDependencies": {
-    "node-sass": "^4.14.1",
     "lite-server": "^2.5.4",
+    "node-sass": "^4.14.1",
     "onchange": "^7.0.0",
     "parallelshell": "^3.0.1"
-  }
+  },
+  "dependencies": {}
 }

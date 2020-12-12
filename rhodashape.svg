@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 500 500">
+    <style>
+        filter: hue-rotate(30deg);
+    </style>
+    <filter id="myFilter">
+        
+    </filter>
+    <defs>
+      <mask id="arch">
+        <circle cx="50%" cy="100%" r="150" fill="white"/>
+        <circle cx="50%" cy="100%" r="10" fill="black"/>
+      </mask>
+
+    </defs>
+    
+    
+    <circle cx="150" cy='150' r='150' fill="purple" mask="url(#arch)" />
+    <circle cx="150" cy='150' r='130' fill="hsl(180,100%,50%)" mask="url(#arch)" />
+    <circle cx="150" cy='150' r='110' fill="hsl(35,100%,50%)" mask="url(#arch)" />
+    <circle cx="150" cy='150' r='90' fill="hsl(55,100%,50%)" mask="url(#arch)" />
+    <circle cx="150" cy='150' r='70' fill="hsl(349,100%,70%)" mask="url(#arch)" />
+    <circle cx="150" cy='150' r='50' fill="hsl(120,100%,60%)" mask="url(#arch)" />
+    <circle cx="150" cy='150' r='30' fill="hsl(40,40%,60%)" mask="url(#arch)" />
+    <!-- <circle cx="150" cy='150' r='10' fill="white" /> -->
+
+</svg>
