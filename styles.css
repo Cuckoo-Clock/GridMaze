@@ -1,31 +1,15 @@
-.field{
-  /* width: 100%; */
+.field {
+  width: 100%;
   display: grid; }
 
+.color-shift {
+  filter: hue-rotate(90deg); }
 
-.color-shift{
-  /* display: block; */
-  filter: hue-rotate(140deg);
-  transform: rotate(30deg); 
-  /* transform: skewX(10deg);1 */
-}
+.container {
+  display: grid; }
 
-.no-support {
-  text-align: center;
-  padding: 10px;
-  width: 300px;
-  position: absolute;
-  z-index: 100;
-  top: 5px;
-  left: 5px;
-  background: #ee6620;
-  color: #fff;
-  font-size: 12px;
-  display: none;
-}
-
-@supports not (backdrop-filter: opacity( 1.0 )) {
-  .no-support {
-    display: block;
-  }
-}
+.goldrect {
+  height: 162px;
+  width: 100px;
+  border-radius: 5px;
+  background-color: #77cc66; }

@@ -28,6 +28,7 @@ https://greensock.com/scrollmagic/
 * [Codrops article on SVG filters](https://tympanus.net/codrops/2019/01/15/svg-filters-101/)
 * [css backdrop filter](https://iamvdo.me/en/blog/advanced-css-filters)
 * [a walk through applying filters to display font](https://www.creativebloq.com/how-to/add-svg-filters-with-css)
+* [applying svg filters to html vis css](https://www.youtube.com/watch?v=sCE-n5k0-1g&list=RDCMUCbwXnUipZsLfUckBPsC7Jog&start_radio=1&t=0)
 
 #### other CSS bits
 

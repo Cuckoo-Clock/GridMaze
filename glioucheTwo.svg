@@ -2,10 +2,23 @@
     <defs>
     <filter x="0" y="0" width="100%" height="100%" id="rainbow" filterUnits="objectBoundingBox" color-interpolation-filters="sRGB">
         
-        <feImage xlink:href="rhodashape.svg" preserveAspectRatio="none" result="f1"/>
+        <feImage x="0%" y="0%" width="100%" height="100%" xlink:href="./dotdot.svg" result="f1"/>
         
         <!-- repeat loaded pattern with feTile filter to fill the full area of the original object -->
-       
+        <feTile in="f1" x="0" y="0" width="100%" height="100%" result="f2"/>
+        
+        
+        <!-- intersection of created pattern with original object -->
+        <!-- <feComposite in="SourceGraphic" in2="f2" result="f3" operator="in" /> -->
+        
+        
+        
+        <!-- the end - connection of the pattern with original object -->
+         <feMerge>
+        
+            <feMergeNode in="SourceGraphic" />
+            <feMergeNode in="f2" />
+        </feMerge> 
      
     </filter>
       <filter id="drop-shadow">
@@ -20,7 +33,7 @@
     </defs>
 
 <circle cx="150" cy="150" r="125" filter="url(#drop-shadow)" stroke="purple" stroke-width="20" fill='transparent'/>
-<circle cx="300" cy="175" r="150" filter="url(#rainbow)" stroke="cyan" fill="white" stroke-width="10" opacity=".2"/>
+<circle cx="300" cy="175" r="150" filter="url(#rainbow)" stroke="cyan" fill="white" stroke-width="10" opacity=".5"/>
 <!-- filter="url(rainbow)" -->
 
 </svg>
