@@ -12,4 +12,8 @@
   height: 162px;
   width: 100px;
   border-radius: 5px;
-  background-color: #77cc66; }
+  background-color: #77cc66;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white; }
