@@ -1,0 +1,7 @@
+<!-- building upon what's laid out in smashing -->
+
+<style>
+  div, rect {
+  transform-origin: 50% 50%;
+}
+</style>

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        :root {
+            --width: 25%;
+            --margin: 20px;
+        }
+        @media (max-width: 400px) {
+            :root {
+            --width: 50%;
+            --margin: 10px;
+            }
+        }
+        body {
+            display: flex;
+            flex-wrap: wrap;
+        }
+        div {
+            flex: 1;
+            height: 220px;
+            flex-basis: calc(var(--width) - (var(--margin) * 3));
+            background: #ccc;
+            margin: var(--margin);
+        }
+    </style>
+</head>
+<body>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <!-- adjust styling with javascript -->
+    <!-- https://googlechrome.github.io/samples/css-custom-properties/index.html -->
+    <!-- https://codepen.io/wesbos/pen/adQjoY -->
+    <h1>styling</h1>
+    <!-- and don't forget custom inputs for it -->
+    <!-- https://css-tricks.com/custom-styling-form-inputs-with-modern-css-features/ -->
+</body>
+</html>
