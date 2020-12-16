@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 50 50">
+
+    <circle cx="10" cy='10' r='10' fill="purple"  />
+    <circle cx="30" cy='30' r='10' fill="purple"  />
+
+</svg>
