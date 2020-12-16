@@ -22,6 +22,8 @@ https://greensock.com/scrollmagic/
 
 #### SVG & CSS filters
 
+*__checkout Snap.svg__*
+
 * [Smashing Magazine's breakdown](https://www.smashingmagazine.com/2015/05/why-the-svg-filter-is-awesome/)
 * [CSS filters](https://developer.mozilla.org/en-US/docs/Web/CSS/filter)
 * [applying filters](https://www.creativebloq.com/how-to/add-svg-filters-with-css)
@@ -29,11 +31,15 @@ https://greensock.com/scrollmagic/
 * [css backdrop filter](https://iamvdo.me/en/blog/advanced-css-filters)
 * [a walk through applying filters to display font](https://www.creativebloq.com/how-to/add-svg-filters-with-css)
 * [applying svg filters to html vis css](https://www.youtube.com/watch?v=sCE-n5k0-1g&list=RDCMUCbwXnUipZsLfUckBPsC7Jog&start_radio=1&t=0)
+* [Nano, Minify, and Vecta are svg tools for editing, compression and font embeder](https://vecta.io/blog)
+
+
+
 
 opinions vary vastly on best practices for putting svg out into a page. Here's a distilation of what I've seen:
 
-use `<img>` for static non interactive, not manipulatably icons. Image searchable in regards to SEO.
-use `<object>` for interactive elements
+use `<img>` for static non interactive, not manipulatably icons. Image searchable in regards to SEO.  
+use `<object>` for interactive elements. Also provides an easy way to load a fallback  
 use inline to be able to easily manipulate with css and js, loads with the dom, but doesn't cache? but there are server side aspects to this, like loading with ajax...[or that's what is said here](https://www.sitepoint.com/css-with-svg/)
 
 #### other CSS bits

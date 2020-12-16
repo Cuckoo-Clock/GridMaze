@@ -53,7 +53,7 @@ object{
 }
 
 
-// look at for animating gid biz
+// look at for animating grid biz
 
 
 // .grid {
@@ -69,6 +69,8 @@ object{
 //     grid-template-rows: 200px;
 //     grid-gap: 10px;
 //   }
+
+///theme button biz
 
 #toggler{
     display: flex;
@@ -86,9 +88,64 @@ object{
 
 }
 
+////////////////////
+// What is below is being built from 
+// https://css-tricks.com/custom-styling-form-inputs-with-modern-css-features/
 
-// none of these are doing nothing
+@supports(-webkit-appearance: none) or (-moz-appearance: none) {
+    input[type='checkbox'],
+    input[type='radio'] {
+      -webkit-appearance: none;
+      -moz-appearance: none;
+    }
+  }
+  .switch {
+    width: 38px;
+    border-radius: 11px;
+  }
+  
+  /* The toggle knob */
+  .switch::after {
+    left: 2px;
+    top: 2px;
+    border-radius: 50%;
+    width: 15px;
+    height: 15px;
+    background: var(--ab, var(--border));
+    transform: translateX(var(--x, 0));
+  }
+  
+  /* Change color and position when checked */
+  .switch:checked {
+    --ab: var(--active-inner);
+    --x: 17px;
+  }
 
+// input[type='checkbox'].switch {
+//     width: 38px;
+//     border-radius: 11px;
+//   }
+// input[type='checkbox'].switch:after {
+//     left: 2px;
+//     top: 2px;
+//     border-radius: 50%;
+//     width: 15px;
+//     height: 15px;
+//     background: var(--ab, hsl(231, 39%, 81%));
+//     -webkit-transform: translateX(var(--x, 0));
+//             transform: translateX(var(--x, 0));
+//   }
+// input[type='checkbox'].switch:checked {
+//     --ab: var(hsl(0,0%,100%));
+//     --x: 17px;
+//   }
+// input[type='checkbox'].switch:disabled:not(:checked):after {
+//     opacity: .6;
+//   }
+
+
+////////////////////
+// SVG styling
 
 .fuckingblue{
    fill: hsl(330,70%,40%);
@@ -126,7 +183,7 @@ object{
     margin-left: -100%; /* required */
 }
 .block .foreground .outside {
-    position: absolute;
+    // position: absolute;
     top: 5px;
     left: 8px;
 }
