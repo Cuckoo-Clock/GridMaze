@@ -1,19 +1,99 @@
-.field {
-  width: 100%;
-  display: grid; }
+:root {
+  --green:  hsl(110,50%,60%);
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-size: 17px; }
+
+html[data-theme='dark'] {
+  --hue: 210;
+  /* Blue */
+  --accent-hue: 280;
+  /* Orange */
+  --text-color-normal: hsl(var(--hue), 10%, 62%);
+  --highlight: hsl(var(--accent-hue), 40%, 45%); }
+
+html[data-theme='light'] {
+  --hue: 210;
+  /* Blue */
+  --accent-hue: 25;
+  /* Orange */
+  --normal: hsl(var(--hue), 10%, 62%);
+  --highlight: hsl(var(--accent-hue), 70%, 45%); }
+
+object {
+  width: 100%; }
 
 .color-shift {
   filter: hue-rotate(90deg); }
 
-.container {
-  display: grid; }
+.blueshift {
+  filter: hue-rotate(45deg);
+  width: 100%; }
+
+.fibgrid {
+  display: grid;
+  grid: 1fr 1.62fr / 1fr 1.62fr;
+  grid-gap: 1rem; }
 
 .goldrect {
-  height: 162px;
-  width: 100px;
+  padding: 1.5rem;
   border-radius: 5px;
-  background-color: #77cc66;
+  background-color: var(--green);
   display: flex;
   justify-content: center;
   align-items: center;
-  color: white; }
+  color: #ad8a1f; }
+
+#toggler {
+  display: flex;
+  bottom: 1vh;
+  left: 50%;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  border: 2px dashed 12 3 12 cyan;
+  border-radius: 5px;
+  background: var(--highlight);
+  padding: .5rem;
+  opacity: .5;
+  z-index: 200; }
+
+.fuckingblue {
+  fill: #ad1f66; }
+
+.fuckingblue:hover {
+  fill: #475285;
+  transition: ease .2s; }
+
+/* Every rule not marked by "required" is optional and used only to decorate the example */
+.block {
+  margin: 10px 50px;
+  display: flex;
+  /* required */
+  flex-flow: row nowrap;
+  /* required */ }
+
+.block .background,
+.block .foreground {
+  box-sizing: border-box;
+  /* required */
+  width: 100%;
+  /* required */
+  flex: none;
+  /* required */ }
+
+.block .background {
+  background: #9ff;
+  color: #fff;
+  padding: 15px;
+  font-size: 30px; }
+
+.block .foreground {
+  padding: 15px;
+  border: solid 1px;
+  margin-left: -100%;
+  /* required */ }
+
+.block .foreground .outside {
+  position: absolute;
+  top: 5px;
+  left: 8px; }

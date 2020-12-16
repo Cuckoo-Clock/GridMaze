@@ -5,7 +5,9 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "npm run parallelshell start-lite sassify",
+    "start": "npm run watch:all",
+    "watch:scss": "onchange './*.scss' -- npm run sassify",
+    "watch:all": "parallelshell 'npm run watch:scss' 'npm run lite'",
     "start-lite": "npm run lite",
     "lite": "lite-server",
     "sassify": "node-sass styles.scss styles.css"

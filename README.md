@@ -30,6 +30,12 @@ https://greensock.com/scrollmagic/
 * [a walk through applying filters to display font](https://www.creativebloq.com/how-to/add-svg-filters-with-css)
 * [applying svg filters to html vis css](https://www.youtube.com/watch?v=sCE-n5k0-1g&list=RDCMUCbwXnUipZsLfUckBPsC7Jog&start_radio=1&t=0)
 
+opinions vary vastly on best practices for putting svg out into a page. Here's a distilation of what I've seen:
+
+use `<img>` for static non interactive, not manipulatably icons. Image searchable in regards to SEO.
+use `<object>` for interactive elements
+use inline to be able to easily manipulate with css and js, loads with the dom, but doesn't cache? but there are server side aspects to this, like loading with ajax...[or that's what is said here](https://www.sitepoint.com/css-with-svg/)
+
 #### other CSS bits
 
 * [CSS graident](https://cssgradient.io/blog/)
