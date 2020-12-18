@@ -1,5 +1,5 @@
 # GridMaze
-a diversion for learning CSS grid, Flexbox, some parralax & some ARIA practices.
+a diversion for learning CSS grid, Flexbox, SVG's some parralax & some ARIA practices, it really is a sketchbook that is sprawling right now...(12.18.20)
 
 [A thorough resource for learning](https://learncssgrid.com/)
 & don't forget jen simmons's videos.  
