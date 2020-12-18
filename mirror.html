@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>mirror mirror glass morphism</title>
+    <style>
+        .pane{
+            background: 
+                linear-gradient(30deg,hsla(0, 0%, 100%,.2) 10%,hsla(160,80%,80%,.2));
+            background-color: hsla(160,80%,80%,.3) ;
+            
+            filter: drop-shadow(5px -15px 15px hsla(180, 100%, 50%, .5));
+            
+            opacity: .5;
+            backdrop-filter: hue-rotate(180deg);
+            border: .75px  ridge hsla(0,0%,100%,.6);
+            border-style: ridge;
+        }
+        .etch{background-color: hsl(160,80%,80%) ;
+            opacity: .9;
+        }
+        
+        #firstPane{
+            /* do this with grid? */
+            position: absolute;
+            top: 20%;
+            left: 35%;
+            width: 30%;
+            height: 60%;
+        }
+        #blurPane{
+            backdrop-filter: blur(2px);
+            position: absolute;
+            top: 20%;
+            left: 35%;
+            width: 30%;
+            height: 60%;
+            margin
+        }
+    </style>
+</head>
+<body>
+    <div id="firstPane"class="pane">
+    </div>
+    <div id="blurPane">
+        <input type="checkbox" name="checkOne" id="c1">
+    </div>
+
+    <div>
+        <img src="https://picsum.photos/id/140/600" alt="">
+    </div>
+</body>
+</html>

@@ -3,8 +3,74 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>catacombs</title>
     <style>
+      @supports(-webkit-appearance: none) or (-moz-appearance: none) {
+        input[type='checkbox'],
+        input[type='radio'] {
+            --active: #275EFE;
+            --active-inner: #fff;
+            --focus: 2px rgba(39, 94, 254, .25);
+            --border: #BBC1E1;
+            --border-hover: #275EFE;
+            --background: #fff;
+            --disabled: #F6F8FF;
+            --disabled-inner: #E1E6F9;
+        }
+        }
+
+        /* toggle container */
+        .switch {
+            width: 38px;
+            border-radius: 11px;
+        }
+
+        /* toggle knob */
+        .switch::after{
+            left: 2px;
+            top: 2px;
+            border-radius: 50%;
+            width: 15px;
+            height: 15px;
+            background: var(--ab, var(--border));
+            transform: translate(var(--x, 0));
+        }
+
+        /* change color and knob position when checked */
+        .switch:checked {
+            --ab: var(--active-inner);
+            --x: 17px;
+        }
+
+        /* drop the opacity when disabled */
+        .switch:disabled:not(:checked)::after{
+            opacity: .6;
+        }
+
+                input[type='checkbox'],
+        input[type='radio'] {
+        --focus: 2px rgba(39, 94, 254, .25);
+        outline: none;
+        transition: box-shadow .2s;
+        }
+
+        input[type='checkbox']:focus,
+        input[type='radio']:focus {
+        box-shadow: 0 0 0 var(--focus);
+        }
+
+        input[type='checkbox'] + label,
+        input[type='radio'] + label {
+        display: inline-block;
+        vertical-align: top;
+        /* Additional styling */
+        }
+
+        input[type='checkbox']:disabled + label,
+        input[type='radio']:disabled + label {
+            cursor: not-allowed;
+        }
+
         :root {
             --width: 25%;
             --margin: 20px;
@@ -19,25 +85,52 @@
             display: flex;
             flex-wrap: wrap;
         }
-        div {
+        .gridDiv {
             flex: 1;
             height: 220px;
             flex-basis: calc(var(--width) - (var(--margin) * 3));
             background: #ccc;
             margin: var(--margin);
         }
+
+        /* button styles */
+
+
+        /* range slider */
+        .slider {
+  -webkit-appearance: none;
+  width: 100%;
+  height: 15px;
+  border-radius: 5px;  
+  background: #d3d3d3;
+  outline: none;
+  opacity: 0.7;
+  -webkit-transition: .2s;
+  transition: opacity .2s;
+}
     </style>
 </head>
 <body>
-    <div></div>
-    <div></div>
-    <div></div>
-    <div></div>
+    <div class="gridDiv"></div>
+    <div class="gridDiv"></div>
+    <div class="gridDiv"></div>
+    <div class="gridDiv"></div>
     <!-- adjust styling with javascript -->
     <!-- https://googlechrome.github.io/samples/css-custom-properties/index.html -->
     <!-- https://codepen.io/wesbos/pen/adQjoY -->
+    <div>
+        <!-- switch -->
+        <!-- id="sunphase" -->
+        <input  type="checkbox" class="switch" name="sunrise/sunset">
+        <label for="sunrise/sunset"></label>
+        <input id="colorSlide" min="1" max="100" type="range" value="50" name="colorSlide">
+        <label for="colorSlide">run the rainbow</label>
+    </div>
     <h1>styling</h1>
     <!-- and don't forget custom inputs for it -->
     <!-- https://css-tricks.com/custom-styling-form-inputs-with-modern-css-features/ -->
+    <div>
+        <a href="mirror.html">mirror mirror</a>
+    </div>
 </body>
 </html>

@@ -1,7 +1,62 @@
 <!-- building upon what's laid out in smashing -->
 
+
+<!-- being able to rotate around the center utilize transform origin -->
 <style>
   div, rect {
   transform-origin: 50% 50%;
 }
 </style>
+
+<!-- for animated line drawing -->
+<!-- That being said, you could create an animated line-drawing effect using CSS. The animation would require you to know the total length of the path you’re animating and then to use the stroke-dashoffset and stroke-dasharray SVG properties to achieve the drawing effect. Once you know the length of the path, you can animate it with CSS using the following rules: -->
+
+#path {
+stroke-dasharray: pathLength;
+stroke-dashoffset: pathLength;
+/* transition stroke-dashoffset */
+transition: stroke-dashoffset 2s linear;
+}
+
+svg:hover #path{
+  stroke-dashoffset: 0;
+}
+
+<!-- http://jsbin.com/haxaqa/1/edit?html,output -->
+
+#cable {
+  stroke: #FFF2B1;
+  stroke-dasharray: 4000 4000;  
+  stroke-dashoffset: 4000;
+  stroke-width: 4;
+  transition: stroke-dashoffset 8s linear;
+}
+
+svg:hover #cable {
+  stroke-dashoffset: 0;
+}
+
+/* turn lamp on */
+.inner-lamp{
+  fill:grey;
+  transition: fill .5s ease-in 6s;
+}
+
+svg:hover .inner-lamp {
+  fill: #FBFFF8;
+}
+/* … */
+
+<!-- automate finding the path length -->
+<!-- deeper explaination https://jakearchibald.com/2013/animated-line-drawing-svg/ -->
+<!-- https://www.youtube.com/watch?v=y0Ic8QcvyK8&list=PLy8Czf0wwiyBplGLKKy8Wz4RWabZGfwek&index=49 -->
+
+var path = document.querySelector('.drawing-path');
+path.getTotalLength();
+//set CSS properties up
+path.style.strokeDasharray = length;
+path.style.strokeDashoffset = length;
+//set transition up
+path.style.transition = 'stroke-dashoffset 2s ease-in-out';
+// animate
+path.style.strokeDashoffset = '0';
